@@ -30,13 +30,12 @@ function addPlane2(data:Plane){
 }
 
 var planeList:Plane[] = [];
+
 //function
 export const addPlane = (data:Plane) => {
     planeList.push(data)
 }
 
-//displaying in html
-var myWheels:string[] = [];
 
 //the rest > the remaining chuchu
 export const addWheels = (...wheelsArray:string[]) => {
@@ -46,6 +45,9 @@ export const addWheels = (...wheelsArray:string[]) => {
 }
 
 //addWheels("small", "medium", "large")
+
+//displaying in html
+var myWheels:string[] = [];
 
 export const addWheel = (wheel:string) => {
     myWheels.push(wheel);
@@ -70,7 +72,7 @@ export const displayWheels = () => {
 
 //looping
 export const loopPlane = () => {
-    //forEach > terminal > retun void
+    //forEach > terminal > return void
     planeList.forEach((item) => {
         console.log("FOR EACH")
         console.log(item)
